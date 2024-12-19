@@ -1,0 +1,286 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8485BF05-37F2-4E8F-AEB1-4CEC3AC32AA0}|EmployeeManagementSystemTaskDec24.Repository\\EmployeeManagementSystemTaskDec24.Repository.csproj|d:\\miscellaneous\\employeemanagementsystemtaskdec24backend\\employeemanagementsystemtaskdec24.repository\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8485BF05-37F2-4E8F-AEB1-4CEC3AC32AA0}|EmployeeManagementSystemTaskDec24.Repository\\EmployeeManagementSystemTaskDec24.Repository.csproj|solutionrelative:employeemanagementsystemtaskdec24.repository\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8485BF05-37F2-4E8F-AEB1-4CEC3AC32AA0}|EmployeeManagementSystemTaskDec24.Repository\\EmployeeManagementSystemTaskDec24.Repository.csproj|d:\\miscellaneous\\employeemanagementsystemtaskdec24backend\\employeemanagementsystemtaskdec24.repository\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8485BF05-37F2-4E8F-AEB1-4CEC3AC32AA0}|EmployeeManagementSystemTaskDec24.Repository\\EmployeeManagementSystemTaskDec24.Repository.csproj|solutionrelative:employeemanagementsystemtaskdec24.repository\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC3FA4B-7C0A-4F12-ADCD-84C6DD85974A}|EmployeeManagementSystemTaskDec24.API\\EmployeeManagementSystemTaskDec24.API.csproj|d:\\miscellaneous\\employeemanagementsystemtaskdec24backend\\employeemanagementsystemtaskdec24.api\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC3FA4B-7C0A-4F12-ADCD-84C6DD85974A}|EmployeeManagementSystemTaskDec24.API\\EmployeeManagementSystemTaskDec24.API.csproj|solutionrelative:employeemanagementsystemtaskdec24.api\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC3FA4B-7C0A-4F12-ADCD-84C6DD85974A}|EmployeeManagementSystemTaskDec24.API\\EmployeeManagementSystemTaskDec24.API.csproj|d:\\miscellaneous\\employeemanagementsystemtaskdec24backend\\employeemanagementsystemtaskdec24.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC3FA4B-7C0A-4F12-ADCD-84C6DD85974A}|EmployeeManagementSystemTaskDec24.API\\EmployeeManagementSystemTaskDec24.API.csproj|solutionrelative:employeemanagementsystemtaskdec24.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC3FA4B-7C0A-4F12-ADCD-84C6DD85974A}|EmployeeManagementSystemTaskDec24.API\\EmployeeManagementSystemTaskDec24.API.csproj|d:\\miscellaneous\\employeemanagementsystemtaskdec24backend\\employeemanagementsystemtaskdec24.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{ABC3FA4B-7C0A-4F12-ADCD-84C6DD85974A}|EmployeeManagementSystemTaskDec24.API\\EmployeeManagementSystemTaskDec24.API.csproj|solutionrelative:employeemanagementsystemtaskdec24.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{309BEA81-CF68-4760-B231-01D0F50CED61}|EmployeeManagementSystemTaskDec24.Business\\EmployeeManagementSystemTaskDec24.Business.csproj|d:\\miscellaneous\\employeemanagementsystemtaskdec24backend\\employeemanagementsystemtaskdec24.business\\entities\\performancereview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{309BEA81-CF68-4760-B231-01D0F50CED61}|EmployeeManagementSystemTaskDec24.Business\\EmployeeManagementSystemTaskDec24.Business.csproj|solutionrelative:employeemanagementsystemtaskdec24.business\\entities\\performancereview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8485BF05-37F2-4E8F-AEB1-4CEC3AC32AA0}|EmployeeManagementSystemTaskDec24.Repository\\EmployeeManagementSystemTaskDec24.Repository.csproj|d:\\miscellaneous\\employeemanagementsystemtaskdec24backend\\employeemanagementsystemtaskdec24.repository\\interfaces\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8485BF05-37F2-4E8F-AEB1-4CEC3AC32AA0}|EmployeeManagementSystemTaskDec24.Repository\\EmployeeManagementSystemTaskDec24.Repository.csproj|solutionrelative:employeemanagementsystemtaskdec24.repository\\interfaces\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8485BF05-37F2-4E8F-AEB1-4CEC3AC32AA0}|EmployeeManagementSystemTaskDec24.Repository\\EmployeeManagementSystemTaskDec24.Repository.csproj|d:\\miscellaneous\\employeemanagementsystemtaskdec24backend\\employeemanagementsystemtaskdec24.repository\\repositories\\performancereviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8485BF05-37F2-4E8F-AEB1-4CEC3AC32AA0}|EmployeeManagementSystemTaskDec24.Repository\\EmployeeManagementSystemTaskDec24.Repository.csproj|solutionrelative:employeemanagementsystemtaskdec24.repository\\repositories\\performancereviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8485BF05-37F2-4E8F-AEB1-4CEC3AC32AA0}|EmployeeManagementSystemTaskDec24.Repository\\EmployeeManagementSystemTaskDec24.Repository.csproj|d:\\miscellaneous\\employeemanagementsystemtaskdec24backend\\employeemanagementsystemtaskdec24.repository\\interfaces\\iperformancereviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8485BF05-37F2-4E8F-AEB1-4CEC3AC32AA0}|EmployeeManagementSystemTaskDec24.Repository\\EmployeeManagementSystemTaskDec24.Repository.csproj|solutionrelative:employeemanagementsystemtaskdec24.repository\\interfaces\\iperformancereviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC3FA4B-7C0A-4F12-ADCD-84C6DD85974A}|EmployeeManagementSystemTaskDec24.API\\EmployeeManagementSystemTaskDec24.API.csproj|d:\\miscellaneous\\employeemanagementsystemtaskdec24backend\\employeemanagementsystemtaskdec24.api\\controllers\\performancereviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC3FA4B-7C0A-4F12-ADCD-84C6DD85974A}|EmployeeManagementSystemTaskDec24.API\\EmployeeManagementSystemTaskDec24.API.csproj|solutionrelative:employeemanagementsystemtaskdec24.api\\controllers\\performancereviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ABC3FA4B-7C0A-4F12-ADCD-84C6DD85974A}|EmployeeManagementSystemTaskDec24.API\\EmployeeManagementSystemTaskDec24.API.csproj|d:\\miscellaneous\\employeemanagementsystemtaskdec24backend\\employeemanagementsystemtaskdec24.api\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ABC3FA4B-7C0A-4F12-ADCD-84C6DD85974A}|EmployeeManagementSystemTaskDec24.API\\EmployeeManagementSystemTaskDec24.API.csproj|solutionrelative:employeemanagementsystemtaskdec24.api\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8485BF05-37F2-4E8F-AEB1-4CEC3AC32AA0}|EmployeeManagementSystemTaskDec24.Repository\\EmployeeManagementSystemTaskDec24.Repository.csproj|d:\\miscellaneous\\employeemanagementsystemtaskdec24backend\\employeemanagementsystemtaskdec24.repository\\interfaces\\idepartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8485BF05-37F2-4E8F-AEB1-4CEC3AC32AA0}|EmployeeManagementSystemTaskDec24.Repository\\EmployeeManagementSystemTaskDec24.Repository.csproj|solutionrelative:employeemanagementsystemtaskdec24.repository\\interfaces\\idepartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{309BEA81-CF68-4760-B231-01D0F50CED61}|EmployeeManagementSystemTaskDec24.Business\\EmployeeManagementSystemTaskDec24.Business.csproj|d:\\miscellaneous\\employeemanagementsystemtaskdec24backend\\employeemanagementsystemtaskdec24.business\\employeemanagementsystemtaskdec24.business.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{309BEA81-CF68-4760-B231-01D0F50CED61}|EmployeeManagementSystemTaskDec24.Business\\EmployeeManagementSystemTaskDec24.Business.csproj|solutionrelative:employeemanagementsystemtaskdec24.business\\employeemanagementsystemtaskdec24.business.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8485BF05-37F2-4E8F-AEB1-4CEC3AC32AA0}|EmployeeManagementSystemTaskDec24.Repository\\EmployeeManagementSystemTaskDec24.Repository.csproj|d:\\miscellaneous\\employeemanagementsystemtaskdec24backend\\employeemanagementsystemtaskdec24.repository\\employeemanagementsystemtaskdec24.repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8485BF05-37F2-4E8F-AEB1-4CEC3AC32AA0}|EmployeeManagementSystemTaskDec24.Repository\\EmployeeManagementSystemTaskDec24.Repository.csproj|solutionrelative:employeemanagementsystemtaskdec24.repository\\employeemanagementsystemtaskdec24.repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{309BEA81-CF68-4760-B231-01D0F50CED61}|EmployeeManagementSystemTaskDec24.Business\\EmployeeManagementSystemTaskDec24.Business.csproj|d:\\miscellaneous\\employeemanagementsystemtaskdec24backend\\employeemanagementsystemtaskdec24.business\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{309BEA81-CF68-4760-B231-01D0F50CED61}|EmployeeManagementSystemTaskDec24.Business\\EmployeeManagementSystemTaskDec24.Business.csproj|solutionrelative:employeemanagementsystemtaskdec24.business\\entities\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{309BEA81-CF68-4760-B231-01D0F50CED61}|EmployeeManagementSystemTaskDec24.Business\\EmployeeManagementSystemTaskDec24.Business.csproj|d:\\miscellaneous\\employeemanagementsystemtaskdec24backend\\employeemanagementsystemtaskdec24.business\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{309BEA81-CF68-4760-B231-01D0F50CED61}|EmployeeManagementSystemTaskDec24.Business\\EmployeeManagementSystemTaskDec24.Business.csproj|solutionrelative:employeemanagementsystemtaskdec24.business\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DepartmentRepository.cs",
+              "DocumentMoniker": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.Repository\\Repositories\\DepartmentRepository.cs",
+              "RelativeDocumentMoniker": "EmployeeManagementSystemTaskDec24.Repository\\Repositories\\DepartmentRepository.cs",
+              "ToolTip": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.Repository\\Repositories\\DepartmentRepository.cs",
+              "RelativeToolTip": "EmployeeManagementSystemTaskDec24.Repository\\Repositories\\DepartmentRepository.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAASwB0AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T08:34:24.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.API\\appsettings.json",
+              "RelativeDocumentMoniker": "EmployeeManagementSystemTaskDec24.API\\appsettings.json",
+              "ToolTip": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.API\\appsettings.json",
+              "RelativeToolTip": "EmployeeManagementSystemTaskDec24.API\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-19T08:39:41.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.API\\Program.cs",
+              "RelativeDocumentMoniker": "EmployeeManagementSystemTaskDec24.API\\Program.cs",
+              "ToolTip": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.API\\Program.cs",
+              "RelativeToolTip": "EmployeeManagementSystemTaskDec24.API\\Program.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAABMAAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T08:37:22.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IEmployeeRepository.cs",
+              "DocumentMoniker": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.Repository\\Interfaces\\IEmployeeRepository.cs",
+              "RelativeDocumentMoniker": "EmployeeManagementSystemTaskDec24.Repository\\Interfaces\\IEmployeeRepository.cs",
+              "ToolTip": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.Repository\\Interfaces\\IEmployeeRepository.cs",
+              "RelativeToolTip": "EmployeeManagementSystemTaskDec24.Repository\\Interfaces\\IEmployeeRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T08:30:37.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.API\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "EmployeeManagementSystemTaskDec24.API\\Controllers\\EmployeeController.cs",
+              "ToolTip": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.API\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "EmployeeManagementSystemTaskDec24.API\\Controllers\\EmployeeController.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAAAEQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T08:43:41.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmployeeRepository.cs",
+              "DocumentMoniker": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.Repository\\Repositories\\EmployeeRepository.cs",
+              "RelativeDocumentMoniker": "EmployeeManagementSystemTaskDec24.Repository\\Repositories\\EmployeeRepository.cs",
+              "ToolTip": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.Repository\\Repositories\\EmployeeRepository.cs",
+              "RelativeToolTip": "EmployeeManagementSystemTaskDec24.Repository\\Repositories\\EmployeeRepository.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAAAC8AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T08:32:22.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IPerformanceReviewRepository.cs",
+              "DocumentMoniker": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.Repository\\Interfaces\\IPerformanceReviewRepository.cs",
+              "RelativeDocumentMoniker": "EmployeeManagementSystemTaskDec24.Repository\\Interfaces\\IPerformanceReviewRepository.cs",
+              "ToolTip": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.Repository\\Interfaces\\IPerformanceReviewRepository.cs",
+              "RelativeToolTip": "EmployeeManagementSystemTaskDec24.Repository\\Interfaces\\IPerformanceReviewRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T08:31:41.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PerformanceReviewRepository.cs",
+              "DocumentMoniker": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.Repository\\Repositories\\PerformanceReviewRepository.cs",
+              "RelativeDocumentMoniker": "EmployeeManagementSystemTaskDec24.Repository\\Repositories\\PerformanceReviewRepository.cs",
+              "ToolTip": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.Repository\\Repositories\\PerformanceReviewRepository.cs",
+              "RelativeToolTip": "EmployeeManagementSystemTaskDec24.Repository\\Repositories\\PerformanceReviewRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T08:35:01.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PerformanceReview.cs",
+              "DocumentMoniker": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.Business\\Entities\\PerformanceReview.cs",
+              "RelativeDocumentMoniker": "EmployeeManagementSystemTaskDec24.Business\\Entities\\PerformanceReview.cs",
+              "ToolTip": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.Business\\Entities\\PerformanceReview.cs",
+              "RelativeToolTip": "EmployeeManagementSystemTaskDec24.Business\\Entities\\PerformanceReview.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T08:29:54.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PerformanceReviewController.cs",
+              "DocumentMoniker": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.API\\Controllers\\PerformanceReviewController.cs",
+              "RelativeDocumentMoniker": "EmployeeManagementSystemTaskDec24.API\\Controllers\\PerformanceReviewController.cs",
+              "ToolTip": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.API\\Controllers\\PerformanceReviewController.cs",
+              "RelativeToolTip": "EmployeeManagementSystemTaskDec24.API\\Controllers\\PerformanceReviewController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAmwBkAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T08:48:07.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DepartmentController.cs",
+              "DocumentMoniker": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.API\\Controllers\\DepartmentController.cs",
+              "RelativeDocumentMoniker": "EmployeeManagementSystemTaskDec24.API\\Controllers\\DepartmentController.cs",
+              "ToolTip": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.API\\Controllers\\DepartmentController.cs",
+              "RelativeToolTip": "EmployeeManagementSystemTaskDec24.API\\Controllers\\DepartmentController.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAcwDsAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T08:47:40.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IDepartmentRepository.cs",
+              "DocumentMoniker": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.Repository\\Interfaces\\IDepartmentRepository.cs",
+              "RelativeDocumentMoniker": "EmployeeManagementSystemTaskDec24.Repository\\Interfaces\\IDepartmentRepository.cs",
+              "ToolTip": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.Repository\\Interfaces\\IDepartmentRepository.cs",
+              "RelativeToolTip": "EmployeeManagementSystemTaskDec24.Repository\\Interfaces\\IDepartmentRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAUAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T08:31:19.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EmployeeManagementSystemTaskDec24.Business.csproj",
+              "DocumentMoniker": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.Business\\EmployeeManagementSystemTaskDec24.Business.csproj",
+              "RelativeDocumentMoniker": "EmployeeManagementSystemTaskDec24.Business\\EmployeeManagementSystemTaskDec24.Business.csproj",
+              "ToolTip": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.Business\\EmployeeManagementSystemTaskDec24.Business.csproj",
+              "RelativeToolTip": "EmployeeManagementSystemTaskDec24.Business\\EmployeeManagementSystemTaskDec24.Business.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-19T08:25:48.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EmployeeManagementSystemTaskDec24.Repository.csproj",
+              "DocumentMoniker": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.Repository\\EmployeeManagementSystemTaskDec24.Repository.csproj",
+              "RelativeDocumentMoniker": "EmployeeManagementSystemTaskDec24.Repository\\EmployeeManagementSystemTaskDec24.Repository.csproj",
+              "ToolTip": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.Repository\\EmployeeManagementSystemTaskDec24.Repository.csproj",
+              "RelativeToolTip": "EmployeeManagementSystemTaskDec24.Repository\\EmployeeManagementSystemTaskDec24.Repository.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-12-19T08:26:47.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Department.cs",
+              "DocumentMoniker": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.Business\\Entities\\Department.cs",
+              "RelativeDocumentMoniker": "EmployeeManagementSystemTaskDec24.Business\\Entities\\Department.cs",
+              "ToolTip": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.Business\\Entities\\Department.cs",
+              "RelativeToolTip": "EmployeeManagementSystemTaskDec24.Business\\Entities\\Department.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T08:29:29.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.Business\\Entities\\Employee.cs",
+              "RelativeDocumentMoniker": "EmployeeManagementSystemTaskDec24.Business\\Entities\\Employee.cs",
+              "ToolTip": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.Business\\Entities\\Employee.cs",
+              "RelativeToolTip": "EmployeeManagementSystemTaskDec24.Business\\Entities\\Employee.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T08:29:00.658Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
