@@ -74,12 +74,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 4,
@@ -90,8 +86,7 @@
               "RelativeToolTip": "EmployeeManagementSystemTaskDec24.API\\Program.cs",
               "ViewState": "AQIAABcAAAAAAAAAAADwvykAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T08:37:22.606Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-19T08:37:22.606Z"
             },
             {
               "$type": "Document",
@@ -101,7 +96,7 @@
               "RelativeDocumentMoniker": "EmployeeManagementSystemTaskDec24.Repository\\Repositories\\EmployeeRepository.cs",
               "ToolTip": "E:\\CODES_practice\\CODE BY ASP.NET\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.Repository\\Repositories\\EmployeeRepository.cs",
               "RelativeToolTip": "EmployeeManagementSystemTaskDec24.Repository\\Repositories\\EmployeeRepository.cs",
-              "ViewState": "AQIAALgAAAAAAAAAAAAowMQAAAAJAAAA",
+              "ViewState": "AQIAALgAAAAAAAAAAAAowMcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-19T08:32:22.463Z",
               "EditorCaption": ""
@@ -128,8 +123,7 @@
               "RelativeToolTip": "EmployeeManagementSystemTaskDec24.Repository\\Interfaces\\IEmployeeRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T08:30:37.971Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-19T08:30:37.971Z"
             },
             {
               "$type": "Document",
@@ -141,8 +135,7 @@
               "RelativeToolTip": "EmployeeManagementSystemTaskDec24.API\\Controllers\\EmployeeController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T08:43:41.068Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-19T08:43:41.068Z"
             },
             {
               "$type": "Document",
@@ -154,8 +147,7 @@
               "RelativeToolTip": "EmployeeManagementSystemTaskDec24.Business\\Entities\\Employee.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T08:29:00.658Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-19T08:29:00.658Z"
             },
             {
               "$type": "Document",
@@ -276,6 +268,10 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-19T08:29:29.689Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }
