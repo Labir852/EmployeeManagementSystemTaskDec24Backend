@@ -25,9 +25,9 @@ namespace EmployeeManagementSystemTaskDec24.Api.Controllers
         }
 
         [HttpGet("{id}")]
-        public IActionResult GetEmployeeById(int id)
+        public async IActionResult GetEmployeeById(int id)
         {
-            var employee = _employeeRepository.GetEmployeeById(id);
+            var employee = await _employeeRepository.GetEmployeeById(id);
             if (employee == null)
                 return NotFound();
 
@@ -35,30 +35,31 @@ namespace EmployeeManagementSystemTaskDec24.Api.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddEmployee(Employee employee)
+        public async IActionResult AddEmployee(Employee employee)
         {
-            var response = _employeeRepository.AddEmployee(employee);
+            var response = await _employeeRepository.AddEmployee(employee);
             return Ok(response);
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateEmployee(int id, Employee employee)
+        public async IActionResult UpdateEmployee(int id, Employee employee)
         {
             if (id != employee.Id)
                 return BadRequest("Employee ID mismatch.");
 
-            var existingEmployee = _employeeRepository.GetEmployeeById(id);
+            var existingEmployee = await _employeeRepository.GetEmployeeById(id);
             if (existingEmployee == null)
                 return NotFound();
 
-           var response =  _employeeRepository.UpdateEmployee(employee);
+           var response = await _employeeRepository.UpdateEmployee(employee);
             return Ok(response);
         }
 
-        [HttpPost("{id}")]
-        public IActionResult DeleteEmployee(int id)
+        [HttpPost("delete/{id}")]
+        
+        public async IActionResult DeleteEmployee(int id)
         {
-            var employee = _employeeRepository.GetEmployeeById(id);
+            var employee = await _employeeRepository.DeleteEmployee(id);
             if (employee == null)
                 return NotFound();
 

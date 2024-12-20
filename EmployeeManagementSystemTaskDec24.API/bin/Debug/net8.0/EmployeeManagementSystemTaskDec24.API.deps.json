@@ -1981,7 +1981,10 @@
           "System.ComponentModel.Annotations": "5.0.0"
         },
         "runtime": {
-          "EmployeeManagementSystemTaskDec24.Business.dll": {}
+          "EmployeeManagementSystemTaskDec24.Business.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "EmployeeManagementSystemTaskDec24.Repository/1.0.0": {
@@ -1993,7 +1996,10 @@
           "System.Data.SqlClient": "4.9.0"
         },
         "runtime": {
-          "EmployeeManagementSystemTaskDec24.Repository.dll": {}
+          "EmployeeManagementSystemTaskDec24.Repository.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
