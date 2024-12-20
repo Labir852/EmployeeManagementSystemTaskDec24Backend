@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KtstVuQMemw=",
+  "dgSpecHash": "Hl+Snbxo/QvxpqMz8gwYUe0qGTwzo8K0N3urHGYmqB/TyrIXm1N3bgvvkjuh0IkAvNvw8AK6jMdPUaLD/rgTMA==",
   "success": true,
-  "projectFilePath": "E:\\CODES_practice\\CODE BY ASP.NET\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.Business\\EmployeeManagementSystemTaskDec24.Business.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\labir\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0\\microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512",
-    "C:\\Users\\labir\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\UMS\\Pictures\\Camera Roll\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.Business\\EmployeeManagementSystemTaskDec24.Business.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

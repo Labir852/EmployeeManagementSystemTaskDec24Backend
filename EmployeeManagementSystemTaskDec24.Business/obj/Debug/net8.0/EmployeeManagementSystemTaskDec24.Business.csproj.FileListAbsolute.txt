@@ -23,3 +23,16 @@ E:\CODES_practice\CODE BY ASP.NET\EmployeeManagementSystemTaskDec24Backend\Emplo
 E:\CODES_practice\CODE BY ASP.NET\EmployeeManagementSystemTaskDec24Backend\EmployeeManagementSystemTaskDec24.Business\obj\Debug\net8.0\refint\EmployeeManagementSystemTaskDec24.Business.dll
 E:\CODES_practice\CODE BY ASP.NET\EmployeeManagementSystemTaskDec24Backend\EmployeeManagementSystemTaskDec24.Business\obj\Debug\net8.0\EmployeeManagementSystemTaskDec24.Business.pdb
 E:\CODES_practice\CODE BY ASP.NET\EmployeeManagementSystemTaskDec24Backend\EmployeeManagementSystemTaskDec24.Business\obj\Debug\net8.0\ref\EmployeeManagementSystemTaskDec24.Business.dll
+C:\Users\UMS\Pictures\Camera Roll\EmployeeManagementSystemTaskDec24Backend\EmployeeManagementSystemTaskDec24.Business\bin\Debug\net8.0\EmployeeManagementSystemTaskDec24.Business.deps.json
+C:\Users\UMS\Pictures\Camera Roll\EmployeeManagementSystemTaskDec24Backend\EmployeeManagementSystemTaskDec24.Business\bin\Debug\net8.0\EmployeeManagementSystemTaskDec24.Business.dll
+C:\Users\UMS\Pictures\Camera Roll\EmployeeManagementSystemTaskDec24Backend\EmployeeManagementSystemTaskDec24.Business\bin\Debug\net8.0\EmployeeManagementSystemTaskDec24.Business.pdb
+C:\Users\UMS\Pictures\Camera Roll\EmployeeManagementSystemTaskDec24Backend\EmployeeManagementSystemTaskDec24.Business\obj\Debug\net8.0\EmployeeManagementSystemTaskDec24.Business.csproj.AssemblyReference.cache
+C:\Users\UMS\Pictures\Camera Roll\EmployeeManagementSystemTaskDec24Backend\EmployeeManagementSystemTaskDec24.Business\obj\Debug\net8.0\EmployeeManagementSystemTaskDec24.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\UMS\Pictures\Camera Roll\EmployeeManagementSystemTaskDec24Backend\EmployeeManagementSystemTaskDec24.Business\obj\Debug\net8.0\EmployeeManagementSystemTaskDec24.Business.AssemblyInfoInputs.cache
+C:\Users\UMS\Pictures\Camera Roll\EmployeeManagementSystemTaskDec24Backend\EmployeeManagementSystemTaskDec24.Business\obj\Debug\net8.0\EmployeeManagementSystemTaskDec24.Business.AssemblyInfo.cs
+C:\Users\UMS\Pictures\Camera Roll\EmployeeManagementSystemTaskDec24Backend\EmployeeManagementSystemTaskDec24.Business\obj\Debug\net8.0\EmployeeManagementSystemTaskDec24.Business.csproj.CoreCompileInputs.cache
+C:\Users\UMS\Pictures\Camera Roll\EmployeeManagementSystemTaskDec24Backend\EmployeeManagementSystemTaskDec24.Business\obj\Debug\net8.0\EmployeeManagementSystemTaskDec24.Business.sourcelink.json
+C:\Users\UMS\Pictures\Camera Roll\EmployeeManagementSystemTaskDec24Backend\EmployeeManagementSystemTaskDec24.Business\obj\Debug\net8.0\EmployeeManagementSystemTaskDec24.Business.dll
+C:\Users\UMS\Pictures\Camera Roll\EmployeeManagementSystemTaskDec24Backend\EmployeeManagementSystemTaskDec24.Business\obj\Debug\net8.0\refint\EmployeeManagementSystemTaskDec24.Business.dll
+C:\Users\UMS\Pictures\Camera Roll\EmployeeManagementSystemTaskDec24Backend\EmployeeManagementSystemTaskDec24.Business\obj\Debug\net8.0\EmployeeManagementSystemTaskDec24.Business.pdb
+C:\Users\UMS\Pictures\Camera Roll\EmployeeManagementSystemTaskDec24Backend\EmployeeManagementSystemTaskDec24.Business\obj\Debug\net8.0\ref\EmployeeManagementSystemTaskDec24.Business.dll
