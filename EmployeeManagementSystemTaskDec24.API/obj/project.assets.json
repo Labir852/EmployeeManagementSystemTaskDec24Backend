@@ -10453,19 +10453,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tanvir Anjum Labir\\.nuget\\packages\\": {}
+    "C:\\Users\\labir\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.API\\EmployeeManagementSystemTaskDec24.API.csproj",
+      "projectUniqueName": "E:\\CODES_practice\\CODE BY ASP.NET\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.API\\EmployeeManagementSystemTaskDec24.API.csproj",
       "projectName": "EmployeeManagementSystemTaskDec24.API",
-      "projectPath": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.API\\EmployeeManagementSystemTaskDec24.API.csproj",
-      "packagesPath": "C:\\Users\\Tanvir Anjum Labir\\.nuget\\packages\\",
-      "outputPath": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.API\\obj\\",
+      "projectPath": "E:\\CODES_practice\\CODE BY ASP.NET\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.API\\EmployeeManagementSystemTaskDec24.API.csproj",
+      "packagesPath": "C:\\Users\\labir\\.nuget\\packages\\",
+      "outputPath": "E:\\CODES_practice\\CODE BY ASP.NET\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Tanvir Anjum Labir\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\labir\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10480,11 +10480,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.Business\\EmployeeManagementSystemTaskDec24.Business.csproj": {
-              "projectPath": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.Business\\EmployeeManagementSystemTaskDec24.Business.csproj"
+            "E:\\CODES_practice\\CODE BY ASP.NET\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.Business\\EmployeeManagementSystemTaskDec24.Business.csproj": {
+              "projectPath": "E:\\CODES_practice\\CODE BY ASP.NET\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.Business\\EmployeeManagementSystemTaskDec24.Business.csproj"
             },
-            "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.Repository\\EmployeeManagementSystemTaskDec24.Repository.csproj": {
-              "projectPath": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.Repository\\EmployeeManagementSystemTaskDec24.Repository.csproj"
+            "E:\\CODES_practice\\CODE BY ASP.NET\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.Repository\\EmployeeManagementSystemTaskDec24.Repository.csproj": {
+              "projectPath": "E:\\CODES_practice\\CODE BY ASP.NET\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.Repository\\EmployeeManagementSystemTaskDec24.Repository.csproj"
             }
           }
         }
@@ -10540,7 +10540,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

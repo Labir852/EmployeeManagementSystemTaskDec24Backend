@@ -6,9 +6,11 @@
         public string Name { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; }
-        public string Department { get; set; }
+        public string DepartmentName { get; set; }
+        public int DepartmentId { get; set; }
         public string Position { get; set; }
         public DateTime JoiningDate { get; set; }
-        public bool IsDeleted { get; set; }
+        public string Status { get; set; }
+        public string Deleted { get; set; }
     }
 }

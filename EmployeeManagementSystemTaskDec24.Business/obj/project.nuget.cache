@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "V91J6yNHkEU=",
+  "dgSpecHash": "KtstVuQMemw=",
   "success": true,
-  "projectFilePath": "D:\\Miscellaneous\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.Business\\EmployeeManagementSystemTaskDec24.Business.csproj",
+  "projectFilePath": "E:\\CODES_practice\\CODE BY ASP.NET\\EmployeeManagementSystemTaskDec24Backend\\EmployeeManagementSystemTaskDec24.Business\\EmployeeManagementSystemTaskDec24.Business.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Tanvir Anjum Labir\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0\\microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512",
-    "C:\\Users\\Tanvir Anjum Labir\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+    "C:\\Users\\labir\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.0\\microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512",
+    "C:\\Users\\labir\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

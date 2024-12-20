@@ -2,6 +2,7 @@
 using EmployeeManagementSystemTaskDec24.Business.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
+using Azure;
 
 namespace EmployeeManagementSystemTaskDec24.Api.Controllers
 {
@@ -36,8 +37,8 @@ namespace EmployeeManagementSystemTaskDec24.Api.Controllers
         [HttpPost]
         public IActionResult AddEmployee(Employee employee)
         {
-            _employeeRepository.AddEmployee(employee);
-            return CreatedAtAction(nameof(GetEmployeeById), new { id = employee.Id }, employee);
+            var response = _employeeRepository.AddEmployee(employee);
+            return Ok(response);
         }
 
         [HttpPut("{id}")]
@@ -50,19 +51,19 @@ namespace EmployeeManagementSystemTaskDec24.Api.Controllers
             if (existingEmployee == null)
                 return NotFound();
 
-            _employeeRepository.UpdateEmployee(employee);
-            return NoContent();
+           var response =  _employeeRepository.UpdateEmployee(employee);
+            return Ok(response);
         }
 
-        [HttpDelete("{id}")]
+        [HttpPost("{id}")]
         public IActionResult DeleteEmployee(int id)
         {
             var employee = _employeeRepository.GetEmployeeById(id);
             if (employee == null)
                 return NotFound();
 
-            _employeeRepository.DeleteEmployee(id);
-            return NoContent();
+           var response= _employeeRepository.DeleteEmployee(id);
+            return Ok(response);
         }
     }
 }

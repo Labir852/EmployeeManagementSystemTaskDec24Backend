@@ -7,8 +7,8 @@ namespace EmployeeManagementSystemTaskDec24.Repository.Interfaces
     {
         Task<IEnumerable<Employee>> GetAllEmployees(int page, int pageIndex);
         Employee GetEmployeeById(int id);
-        void AddEmployee(Employee employee);
-        void UpdateEmployee(Employee employee);
-        void DeleteEmployee(int id);
+        string AddEmployee(Employee employee);
+        string UpdateEmployee(Employee employee);
+        string DeleteEmployee(int id);
     }
 }

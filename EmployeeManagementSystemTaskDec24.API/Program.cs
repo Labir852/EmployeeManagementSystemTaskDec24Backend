@@ -31,6 +31,16 @@ builder.Services.AddScoped<IDepartmentRepository>(sp =>
     return new DepartmentRepository(connectionString);
 });
 
+// Add this before building the app
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllOrigins", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
 
 
 
@@ -44,6 +54,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseCors("AllowAllOrigins");
+// Add this before building the app
+
 
 app.UseAuthorization();
 

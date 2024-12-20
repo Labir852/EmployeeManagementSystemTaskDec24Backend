@@ -41,6 +41,13 @@ namespace EmployeeManagementSystemTaskDec24.Repository.Repositories
                             {
                                 Id = reader.GetInt32(reader.GetOrdinal("EmployeeId")),
                                 Name = reader.GetString(reader.GetOrdinal("Name")),
+                                Phone = reader.GetString(reader.GetOrdinal("Phone")),
+                                DepartmentName = reader.GetString(reader.GetOrdinal("DepartmentName")),
+                                DepartmentId = reader.GetInt32(reader.GetOrdinal("DepartmentID")),
+                                Email = reader.GetString(reader.GetOrdinal("Email")),
+                                Position = reader.GetString(reader.GetOrdinal("Position")),
+                                JoiningDate =  reader.GetDateTime(reader.GetOrdinal("JoiningDate"))
+
                                 // Map other columns as needed
                             };
                             employees.Add(employee);
@@ -72,14 +79,14 @@ namespace EmployeeManagementSystemTaskDec24.Repository.Repositories
                     {
                         employee = new Employee
                         {
-                            Id = (int)reader["Id"],
-                            Name = reader["Name"].ToString(),
-                            Email = reader["Email"].ToString(),
-                            Phone = reader["Phone"].ToString(),
-                            Department = reader["Department"].ToString(),
-                            Position = reader["Position"].ToString(),
-                            JoiningDate = (DateTime)reader["JoiningDate"],
-                            IsDeleted = (bool)reader["IsDeleted"]
+                            Id = reader.GetInt32(reader.GetOrdinal("EmployeeId")),
+                            Name = reader.GetString(reader.GetOrdinal("Name")),
+                            Phone = reader.GetString(reader.GetOrdinal("Phone")),
+                            DepartmentName = reader.GetString(reader.GetOrdinal("DepartmentName")),
+                            Email = reader.GetString(reader.GetOrdinal("Email")),
+                            Position = reader.GetString(reader.GetOrdinal("Position")),
+                            JoiningDate = reader.GetDateTime(reader.GetOrdinal("JoiningDate"))
+
                         };
                     }
                 }
@@ -88,8 +95,9 @@ namespace EmployeeManagementSystemTaskDec24.Repository.Repositories
             return employee;
         }
 
-        public void AddEmployee(Employee employee)
+        public string AddEmployee(Employee employee)
         {
+            string message = "";
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 conn.Open();
@@ -100,16 +108,32 @@ namespace EmployeeManagementSystemTaskDec24.Repository.Repositories
                 cmd.Parameters.AddWithValue("@Name", employee.Name);
                 cmd.Parameters.AddWithValue("@Email", employee.Email);
                 cmd.Parameters.AddWithValue("@Phone", employee.Phone);
-                cmd.Parameters.AddWithValue("@Department", employee.Department);
+                cmd.Parameters.AddWithValue("@Department", employee.DepartmentId);
                 cmd.Parameters.AddWithValue("@Position", employee.Position);
                 cmd.Parameters.AddWithValue("@JoiningDate", employee.JoiningDate);
+                cmd.Parameters.AddWithValue("@Status", employee.Status);
 
                 cmd.ExecuteNonQuery();
+
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        message = reader["Message"].ToString();
+                    }
+                    else
+                    {
+                        message = "No message returned from the database.";
+                    }
+                }
             }
+
+            return message;
         }
 
-        public void UpdateEmployee(Employee employee)
+        public string UpdateEmployee(Employee employee)
         {
+            string message = "";
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 conn.Open();
@@ -121,16 +145,31 @@ namespace EmployeeManagementSystemTaskDec24.Repository.Repositories
                 cmd.Parameters.AddWithValue("@Name", employee.Name);
                 cmd.Parameters.AddWithValue("@Email", employee.Email);
                 cmd.Parameters.AddWithValue("@Phone", employee.Phone);
-                cmd.Parameters.AddWithValue("@Department", employee.Department);
+                cmd.Parameters.AddWithValue("@Department", employee.DepartmentId);
                 cmd.Parameters.AddWithValue("@Position", employee.Position);
                 cmd.Parameters.AddWithValue("@JoiningDate", employee.JoiningDate);
+                cmd.Parameters.AddWithValue("@Status", employee.Status);
 
                 cmd.ExecuteNonQuery();
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        message = reader["Message"].ToString();
+                    }
+                    else
+                    {
+                        message = "No message returned from the database.";
+                    }
+                }
             }
+
+            return message;
         }
 
-        public void DeleteEmployee(int id)
+        public string DeleteEmployee(int id)
         {
+            string message = "";
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 conn.Open();
@@ -141,7 +180,20 @@ namespace EmployeeManagementSystemTaskDec24.Repository.Repositories
                 cmd.Parameters.AddWithValue("@Id", id);
 
                 cmd.ExecuteNonQuery();
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        message = reader["Message"].ToString();
+                    }
+                    else
+                    {
+                        message = "No message returned from the database.";
+                    }
+                }
             }
+
+            return message;
         }
     }
 }
