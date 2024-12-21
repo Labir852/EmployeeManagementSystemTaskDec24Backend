@@ -7,7 +7,7 @@ namespace EmployeeManagementSystemTaskDec24.Repository.Interfaces
     {
         IEnumerable<Department> GetAllDepartments();
         Department GetDepartmentById(int id);
-        void AddDepartment(Department department);
-        void UpdateDepartment(Department department);
+        string AddDepartment(Department department);
+        string UpdateDepartment(Department department);
     }
 }

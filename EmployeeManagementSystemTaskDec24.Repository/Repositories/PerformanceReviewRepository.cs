@@ -15,37 +15,36 @@ namespace EmployeeManagementSystemTaskDec24.Repository.Repositories
             _connectionString = connectionString;
         }
 
-        //public Task<IEnumerable<PerformanceReview>> GetAllPerformanceReviews()
-        //{
-        //    var reviews = new List<PerformanceReview>();
+        public async Task<IEnumerable<PerformanceReview>> GetAllPerformanceReviews()
+        {
+            var reviews = new List<PerformanceReview>();
 
-        //    using (SqlConnection conn = new SqlConnection(_connectionString))
-        //    {
-        //        conn.Open();
-        //        SqlCommand cmd = new SqlCommand("GetReviewsByEmployeeId", conn)
-        //        {
-        //            CommandType = CommandType.StoredProcedure
-        //        };
-        //        //cmd.Parameters.AddWithValue("@EmployeeId", employeeId);
+            using (SqlConnection conn = new SqlConnection(_connectionString))
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("GetPerformanceReviewList", conn)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
 
-        //        using (var reader = cmd.ExecuteReader())
-        //        {
-        //            while (reader.Read())
-        //            {
-        //                reviews.Add(new PerformanceReview
-        //                {
-        //                    Id = (int)reader["Id"],
-        //                    EmployeeId = (int)reader["EmployeeId"],
-        //                    ReviewDate = (DateTime)reader["ReviewDate"],
-        //                    Score = (int)reader["Score"],
-        //                    Notes = reader["Notes"].ToString()
-        //                });
-        //            }
-        //        }
-        //    }
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        reviews.Add(new PerformanceReview
+                        {
+                            Id = reader.GetInt32(reader.GetOrdinal("ReviewID")),
+                            EmployeeName = reader.GetString(reader.GetOrdinal("EmployeeName")),
+                            ReviewDate = reader.GetDateTime(reader.GetOrdinal("ReviewDate")),
+                            Score = reader.GetInt32(reader.GetOrdinal("ReviewScore")),
+                            Notes = reader.GetString(reader.GetOrdinal("ReviewNotes"))
+                        });
+                    }
+                }
+            }
 
-        //    return reviews;
-        //}
+            return reviews;
+        }
         public async Task<PerformanceReview> GetPerformanceReviewById(int id)
         {
             PerformanceReview review = null; // Change from List<PerformanceReview> to a single object
@@ -79,8 +78,12 @@ namespace EmployeeManagementSystemTaskDec24.Repository.Repositories
         }
 
 
-        public Task AddPerformanceReview(PerformanceReview review)
+        
+
+
+        public string AddPerformanceReview(PerformanceReview review)
         {
+            string message = "";
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 conn.Open();
@@ -89,13 +92,24 @@ namespace EmployeeManagementSystemTaskDec24.Repository.Repositories
                     CommandType = CommandType.StoredProcedure
                 };
                 cmd.Parameters.AddWithValue("@EmployeeId", review.EmployeeId);
-                cmd.Parameters.AddWithValue("@ReviewDate", review.ReviewDate);
-                cmd.Parameters.AddWithValue("@Score", review.Score);
-                cmd.Parameters.AddWithValue("@Notes", review.Notes);
+                cmd.Parameters.AddWithValue("@ReviewDate ", review.ReviewDate);
+                cmd.Parameters.AddWithValue("@ReviewScore", review.Score);
+                cmd.Parameters.AddWithValue("@ReviewNotes", review.Notes);
 
-                cmd.ExecuteNonQuery();
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        message = reader["Message"].ToString();
+                    }
+                    else
+                    {
+                        message = "No message returned from the database.";
+                    }
+                }
             }
-            return Task.CompletedTask;
+
+            return message;
         }
     }
 }

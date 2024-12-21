@@ -33,24 +33,21 @@ namespace EmployeeManagementSystemTaskDec24.Api.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddDepartment(Department department)
+        public  IActionResult AddDepartment(Department department)
         {
-            _departmentRepository.AddDepartment(department);
-            return CreatedAtAction(nameof(GetDepartmentById), new { id = department.Id }, department);
+           var response =  _departmentRepository.AddDepartment(department);
+            return Ok(response);
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("addManager/{id}")]
         public IActionResult UpdateDepartment(int id, Department department)
         {
-            if (id != department.Id)
+            if (id != department.DepartmentID)
                 return BadRequest("Department ID mismatch.");
 
-            var existingDepartment = _departmentRepository.GetDepartmentById(id);
-            if (existingDepartment == null)
-                return NotFound();
 
-            _departmentRepository.UpdateDepartment(department);
-            return NoContent();
+            var response = _departmentRepository.UpdateDepartment(department);
+            return Ok(response);
         }
 
         //[HttpDelete("{id}")]

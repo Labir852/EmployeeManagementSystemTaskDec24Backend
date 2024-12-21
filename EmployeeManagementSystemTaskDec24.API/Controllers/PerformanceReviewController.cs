@@ -1,5 +1,6 @@
 ﻿using EmployeeManagementSystemTaskDec24.Business.Entities;
 using EmployeeManagementSystemTaskDec24.Repository.Interfaces;
+using EmployeeManagementSystemTaskDec24.Repository.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 [ApiController]
@@ -13,12 +14,12 @@ public class PerformanceReviewController : ControllerBase
         _repository = repository;
     }
 
-    //[HttpGet]
-    //public async Task<IActionResult> GetAllPerformanceReviews()
-    //{
-    //    var reviews = await _repository.GetAllPerformanceReviews();
-    //    return Ok(reviews);
-    //}
+    [HttpGet]
+    public async Task<IActionResult> GetAllPerformanceReviews()
+    {
+        var reviews = await _repository.GetAllPerformanceReviews();
+        return Ok(reviews);
+    }
 
     [HttpGet("{id}")]
     public async Task<IActionResult> GetPerformanceReviewById(int id)
@@ -31,10 +32,10 @@ public class PerformanceReviewController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> AddPerformanceReview([FromBody] PerformanceReview review)
+    public IActionResult AddPerformanceReview(PerformanceReview review)
     {
-        await _repository.AddPerformanceReview(review);
-        return CreatedAtAction(nameof(GetPerformanceReviewById), new { id = review.Id }, review);
+        var response = _repository.AddPerformanceReview(review);
+        return Ok(response);
     }
 
     //[HttpPut]

@@ -25,46 +25,67 @@ namespace EmployeeManagementSystemTaskDec24.Api.Controllers
         }
 
         [HttpGet("{id}")]
-        public async IActionResult GetEmployeeById(int id)
+        public  IActionResult GetEmployeeById(int id)
         {
-            var employee = await _employeeRepository.GetEmployeeById(id);
+            var employee =  _employeeRepository.GetEmployeeById(id);
             if (employee == null)
                 return NotFound();
 
             return Ok(employee);
         }
+        [HttpGet("department/{id}")]
+        public async Task<IActionResult> GetEmployeeByDepartmentId(int id)
+        {
+            var employee = await _employeeRepository.GetEmployeeByDepartmentId(id);
+           
+
+            return Ok(employee);
+        }
 
         [HttpPost]
-        public async IActionResult AddEmployee(Employee employee)
+        public  IActionResult AddEmployee(AddEmployee employee)
         {
-            var response = await _employeeRepository.AddEmployee(employee);
+            var response =  _employeeRepository.AddEmployee(employee);
             return Ok(response);
         }
 
         [HttpPut("{id}")]
-        public async IActionResult UpdateEmployee(int id, Employee employee)
+        public  IActionResult UpdateEmployee(int id, Employee employee)
         {
             if (id != employee.Id)
                 return BadRequest("Employee ID mismatch.");
 
-            var existingEmployee = await _employeeRepository.GetEmployeeById(id);
+            var existingEmployee =  _employeeRepository.GetEmployeeById(id);
             if (existingEmployee == null)
                 return NotFound();
 
-           var response = await _employeeRepository.UpdateEmployee(employee);
+           var response =  _employeeRepository.UpdateEmployee(employee);
             return Ok(response);
         }
 
         [HttpPost("delete/{id}")]
         
-        public async IActionResult DeleteEmployee(int id)
+        public  IActionResult DeleteEmployee(int id)
         {
-            var employee = await _employeeRepository.DeleteEmployee(id);
+            var employee =  _employeeRepository.DeleteEmployee(id);
             if (employee == null)
                 return NotFound();
 
            var response= _employeeRepository.DeleteEmployee(id);
             return Ok(response);
         }
+
+        [HttpGet("SearchEmployees")]
+        public async Task<IActionResult> SearchEmployees(
+        [FromQuery] string? searchQuery,
+        [FromQuery] int? departmentId,
+        [FromQuery] string? position,
+        [FromQuery] int page = 1,
+        [FromQuery] int pageSize = 10)
+            {
+                var employees = await _employeeRepository.SearchEmployees(searchQuery, departmentId, position, page, pageSize);
+                return Ok(employees);
+            }
+
     }
 }

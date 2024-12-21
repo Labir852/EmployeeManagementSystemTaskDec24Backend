@@ -1,4 +1,5 @@
-﻿using EmployeeManagementSystemTaskDec24.Business.Entities;
+﻿using Dapper;
+using EmployeeManagementSystemTaskDec24.Business.Entities;
 using EmployeeManagementSystemTaskDec24.Repository.Interfaces;
 using System.Collections.Generic;
 using System.Data;
@@ -95,7 +96,47 @@ namespace EmployeeManagementSystemTaskDec24.Repository.Repositories
             return employee;
         }
 
-        public string AddEmployee(Employee employee)
+            public async Task<IEnumerable<Employee>> GetEmployeeByDepartmentId(int id)
+            {
+                List<Employee> employees = new List<Employee>();
+
+                using (var connection = new SqlConnection(_connectionString))
+                {
+                    await connection.OpenAsync();
+
+                    using (var command = new SqlCommand("GetEmployeeByDept", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+
+                    command.Parameters.AddWithValue("@Id", id);
+
+                    using (var reader = await command.ExecuteReaderAsync())
+                        {
+                            while (await reader.ReadAsync())
+                            {
+                                var employee = new Employee
+                                {
+                                    Id = reader.GetInt32(reader.GetOrdinal("EmployeeId")),
+                                    Name = reader.GetString(reader.GetOrdinal("Name")),
+                                    Phone = reader.GetString(reader.GetOrdinal("Phone")),
+                                    DepartmentName = reader.GetString(reader.GetOrdinal("DepartmentName")),
+                                    DepartmentId = reader.GetInt32(reader.GetOrdinal("DepartmentID")),
+                                    Email = reader.GetString(reader.GetOrdinal("Email")),
+                                    Position = reader.GetString(reader.GetOrdinal("Position")),
+                                    JoiningDate = reader.GetDateTime(reader.GetOrdinal("JoiningDate"))
+
+                                    // Map other columns as needed
+                                };
+                                employees.Add(employee);
+                            }
+                        }
+                    }
+                }
+
+                return employees;
+            }
+
+            public string AddEmployee(AddEmployee employee)
         {
             string message = "";
             using (SqlConnection conn = new SqlConnection(_connectionString))
@@ -112,8 +153,6 @@ namespace EmployeeManagementSystemTaskDec24.Repository.Repositories
                 cmd.Parameters.AddWithValue("@Position", employee.Position);
                 cmd.Parameters.AddWithValue("@JoiningDate", employee.JoiningDate);
                 cmd.Parameters.AddWithValue("@Status", employee.Status);
-
-                cmd.ExecuteNonQuery();
 
                 using (SqlDataReader reader = cmd.ExecuteReader())
                 {
@@ -150,7 +189,6 @@ namespace EmployeeManagementSystemTaskDec24.Repository.Repositories
                 cmd.Parameters.AddWithValue("@JoiningDate", employee.JoiningDate);
                 cmd.Parameters.AddWithValue("@Status", employee.Status);
 
-                cmd.ExecuteNonQuery();
                 using (SqlDataReader reader = cmd.ExecuteReader())
                 {
                     if (reader.Read())
@@ -179,7 +217,6 @@ namespace EmployeeManagementSystemTaskDec24.Repository.Repositories
                 };
                 cmd.Parameters.AddWithValue("@Id", id);
 
-                cmd.ExecuteNonQuery();
                 using (SqlDataReader reader = cmd.ExecuteReader())
                 {
                     if (reader.Read())
@@ -195,5 +232,28 @@ namespace EmployeeManagementSystemTaskDec24.Repository.Repositories
 
             return message;
         }
+
+        public async Task<IEnumerable<Employee>> SearchEmployees( string? searchQuery,int? departmentId,string? position,int page, int pageSize)
+                    {
+                        using (SqlConnection conn = new SqlConnection(_connectionString))
+                        {
+                            conn.Open();
+
+                            var employees = await conn.QueryAsync<Employee>("SearchEmployees",
+                                new
+                                {
+                                    SearchQuery = searchQuery,
+                                    DepartmentID = departmentId,
+                                    Position = position,
+                                    Page = page,
+                                    PageSize = pageSize
+                                },
+                                commandType: CommandType.StoredProcedure
+                            );
+
+                            return employees;
+                        }
+                    }
+
     }
 }

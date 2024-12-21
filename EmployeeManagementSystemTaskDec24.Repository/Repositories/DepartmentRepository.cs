@@ -33,10 +33,12 @@ namespace EmployeeManagementSystemTaskDec24.Repository.Repositories
                     {
                         departments.Add(new Department
                         {
-                            Id = (int)reader["Id"],
-                            Name = reader["Name"].ToString(),
-                            ManagerId = (int)reader["ManagerId"],
-                            Budget = (decimal)reader["Budget"]
+                            DepartmentID = reader.GetInt32(reader.GetOrdinal("DepartmentID")),
+                            DepartmentName = reader.GetString(reader.GetOrdinal("DepartmentName")),
+                            ManagerId = reader.GetInt32(reader.GetOrdinal("ManagerId")),
+                            ManagerName = reader.GetString(reader.GetOrdinal("ManagerName")),
+                            Budget = reader.GetDecimal(reader.GetOrdinal("Budget")),
+                            avgscore = reader.GetDecimal(reader.GetOrdinal("avgscore"))
                         });
                     }
                 }
@@ -64,10 +66,11 @@ namespace EmployeeManagementSystemTaskDec24.Repository.Repositories
                     {
                         department = new Department
                         {
-                            Id = (int)reader["Id"],
-                            Name = reader["Name"].ToString(),
-                            ManagerId = (int)reader["ManagerId"],
-                            Budget = (decimal)reader["Budget"]
+                            DepartmentID = reader.GetInt32(reader.GetOrdinal("DepartmentID")),
+                            DepartmentName = reader.GetString(reader.GetOrdinal("DepartmentName")),
+                            ManagerId = reader.GetInt32(reader.GetOrdinal("ManagerId")),
+                            ManagerName = reader.GetString(reader.GetOrdinal("ManagerName")),
+                            Budget = reader.GetDecimal(reader.GetOrdinal("Budget")),
                         };
                     }
                 }
@@ -76,8 +79,9 @@ namespace EmployeeManagementSystemTaskDec24.Repository.Repositories
             return department;
         }
 
-        public void AddDepartment(Department department)
+        public string AddDepartment(Department department)
         {
+            string message = "";
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 conn.Open();
@@ -85,30 +89,41 @@ namespace EmployeeManagementSystemTaskDec24.Repository.Repositories
                 {
                     CommandType = CommandType.StoredProcedure
                 };
-                cmd.Parameters.AddWithValue("@Name", department.Name);
-                cmd.Parameters.AddWithValue("@ManagerId", department.ManagerId);
+                cmd.Parameters.AddWithValue("@DepartmentName", department.DepartmentName);
                 cmd.Parameters.AddWithValue("@Budget", department.Budget);
 
-                cmd.ExecuteNonQuery();
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        message = reader["Message"].ToString();
+                    }
+                    else
+                    {
+                        message = "No message returned from the database.";
+                    }
+                }
             }
+            return message;
         }
 
-        public void UpdateDepartment(Department department)
+        public string UpdateDepartment(Department department)
         {
+            string message = "";
+            
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
                 conn.Open();
-                SqlCommand cmd = new SqlCommand("UpdateDepartment", conn)
+                SqlCommand cmd = new SqlCommand("AddManager", conn)
                 {
                     CommandType = CommandType.StoredProcedure
                 };
-                cmd.Parameters.AddWithValue("@Id", department.Id);
-                cmd.Parameters.AddWithValue("@Name", department.Name);
+                cmd.Parameters.AddWithValue("@DepartmentID", department.DepartmentID);
                 cmd.Parameters.AddWithValue("@ManagerId", department.ManagerId);
-                cmd.Parameters.AddWithValue("@Budget", department.Budget);
 
                 cmd.ExecuteNonQuery();
             }
+            return message;
         }
     }
 }
